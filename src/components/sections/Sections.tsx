@@ -26,12 +26,14 @@ export const About = () => (
         <h2 className="text-3xl font-bold sm:text-4xl">About me</h2>
         <div className="mt-5 space-y-4 text-mut">
           <p>
-            I am a certified software engineer specialising in web development. I enjoy taking a problem, breaking it down, understanding what it
+            I am a certified software engineer specialising in web development.
+            I enjoy taking a problem, breaking it down, understanding what it
             really needs, and turning it into a working product.
           </p>
           <p>
             My work sits across modern frontend development, backend APIs and,
-            increasingly, AI-powered applications. I'm based in {site.location}{" "}.
+            increasingly, AI-powered applications. I'm based in {site.location}{" "}
+            .
           </p>
           <p>
             I'm looking for internships and paid roles in frontend, backend or
@@ -189,6 +191,17 @@ export const Contact = () => (
             href={`mailto:${site.email}`}
           >
             {site.email}
+          </a>
+        </p>
+        <p className="mt-5 text-mut">
+          Prefer WhatsApp?{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ac underline-offset-4 hover:underline"
+            href={`${site.whatsapp}`}
+          >
+            {site.whatsapp}
           </a>
         </p>
       </Reveal>

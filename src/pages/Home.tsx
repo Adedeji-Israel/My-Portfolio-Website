@@ -11,7 +11,7 @@ import {
 import { useSeo } from "../hooks/useSeo";
 export default function Home() {
   useSeo(
-    "Israel Adedayo — AI-Powered Web Developer",
+    "Israel Adedeji — AI-Powered Web Developer",
     "AI-powered web developer building modern full-stack web applications with React, TypeScript and Node.js.",
   );
   return (

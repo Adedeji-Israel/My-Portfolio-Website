@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[92vh] items-center overflow-hidden pt-32 pb-20"
+      className="relative flex min-h-[92vh] items-center overflow-hidden pt-28 pb-20"
     >
       <motion.div
         aria-hidden
@@ -35,21 +35,23 @@ export function Hero() {
           </motion.p>
           <motion.h1
             {...item(1)}
-            className="text-4xl font-extrabold sm:text-6xl"
+            className="text-3xl font-extrabold sm:text-6xl"
           >
-            I build digital experiences that solve real problems.
+            I build digital experiences that solve real problems using AI.
           </motion.h1>
           <motion.p {...item(2)} className="mt-5 max-w-xl text-lg text-mut">
             I design and develop modern web applications with React, TypeScript
             and Node.js, turning ideas into products people can actually use.
           </motion.p>
-          <motion.div {...item(3)} className="mt-8 flex flex-wrap gap-3">
+          <motion.div
+            {...item(3)}
+            className="mt-8 flex flex-wrap items-center gap-3"
+          >
             <ButtonLink variant="primary" href="#work">
               View my work
             </ButtonLink>
             <ButtonLink href="#contact">Let's connect</ButtonLink>
-          </motion.div>
-          <motion.div {...item(4)} className="mt-6 flex gap-3">
+
             {socialLinks.map((s) => (
               <ButtonLink
                 key={s.label}
