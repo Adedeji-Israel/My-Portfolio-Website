@@ -5,6 +5,8 @@ import { socialLinks } from "../../data/socialLinks";
 import { ButtonLink } from "../ui/Button";
 import { SocialIcon } from "../ui/Icons";
 import { CodePanel } from "./CodePanel";
+import { Typewriter } from "./Typewriter";
+const heroWords = ["build.", "design.", "develop."];
 
 export function Hero() {
   const item = (i: number) => ({
@@ -37,7 +39,16 @@ export function Hero() {
             {...item(1)}
             className="text-3xl font-extrabold sm:text-6xl"
           >
-            I build digital experiences that solve real problems using AI.
+            <span className="sr-only">
+              Real problems, digital solutions, powered by AI. This is what I
+              build, design and develop.{" "}
+            </span>
+            <span aria-hidden>
+              Real problems, digital solutions, powered by AI. This is what I{" "}
+              <span className="inline-block whitespace-nowrap">
+                <Typewriter words={heroWords} />
+              </span>
+            </span>
           </motion.h1>
           <motion.p {...item(2)} className="mt-5 max-w-xl text-lg text-mut">
             I design and develop modern web applications with React, TypeScript

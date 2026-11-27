@@ -3,6 +3,7 @@ import { useState, type PointerEvent } from "react";
 import type { Project } from "../../types";
 import { ButtonLink } from "../ui/Button";
 import { TechBadge } from "../ui/Bits";
+
 export function ProjectCard({ project: p }: { project: Project }) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const move = (e: PointerEvent<HTMLElement>) => {

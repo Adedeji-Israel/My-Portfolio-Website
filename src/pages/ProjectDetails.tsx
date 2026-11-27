@@ -6,6 +6,7 @@ import { ErrorState, Section, TechBadge } from "../components/ui/Bits";
 import { Reveal } from "../components/ui/Reveal";
 import { projects } from "../data/projects";
 import { useSeo } from "../hooks/useSeo";
+
 export default function ProjectDetails() {
   const { id } = useParams();
   const p = projects.find((x) => x.id === id);

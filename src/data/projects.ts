@@ -6,6 +6,13 @@ import organizers from "../assets/eventplace/organizers.jpg";
 import speakers from "../assets/eventplace/speakers.jpg";
 import footer from "../assets/eventplace/footer.jpg";
 
+import cardifyHome from "../assets/cardify/cardify-land-page 01.png";
+import cardifyAbout from "../assets/cardify/cardify-about.png";
+import cardifyContact from "../assets/cardify/cardify-contact.png";
+import cardifySignUp from "../assets/cardify/cardify-sign-up.png";
+import cardifySignIn from "../assets/cardify/cardify-sign-in.png";
+import cardifyFooter from "../assets/cardify/cardify-footer.png"
+
 export const projects: Project[] = [
   // project one
   {
@@ -87,18 +94,60 @@ Key Takeaway: I learned that building great software goes beyond writing code. I
 `,
     },
   },
+
   // project two
   {
-    id: "project-two",
-    title: "Project Two",
-    tagline: "Placeholder project",
+    id: "cardify",
+    title: "Cardify",
+    tagline:
+      "Responsive Website Rebuilt with React, and Tailwind CSS using AI tools",
     description:
-      "Replace this entry in src/data/projects.ts with a real project.",
-    category: ["AI"],
-    technologies: ["Add tech"],
-    gallery: [],
-    placeholder: true,
+      "A five-page marketing site (landing, about, contact, sign up and sign in) rebuilt from my original college project into a modern, responsive React app.",
+    category: ["Frontend", "AI"],
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    image: cardifyHome,
+    liveUrl: "https://cardify-liard.vercel.app",
+    githubUrl: "https://github.com/Adedeji-Israel/cardify-web-app",
+    gallery: [
+      { src: cardifyHome, alt: "Cardify landing page" },
+      { src: cardifyAbout, alt: "About us page" },
+      { src: cardifyContact, alt: "Contact us page" },
+      { src: cardifySignUp, alt: "Create account page" },
+      { src: cardifySignIn, alt: "Sign in page" },
+      { src: cardifyFooter, alt: "Footer section" },
+    ],
+    caseStudy: {
+      problem:
+        "Cardify was my level-one project at SQI College of ICT, hand-coded in plain HTML, CSS and JavaScript. It worked, but it was hard to maintain, not fully responsive and visually dated.",
+      solution:
+        "I rebuilt it in React, TypeScript and Tailwind CSS, keeping the original branding and look of the live site while moving to reusable components and a responsive layout.",
+      features: [
+        "Five pages: landing, about us, contact us, create account and sign in",
+        "Fully responsive layout, mobile first",
+        "Reusable, typed React components",
+        "Original branding preserved and refreshed",
+      ],
+      challenges: [
+        {
+          challenge:
+            "Some assets in the original project were outdated compared to the live site.",
+          solution:
+            "Used the live site as the source of truth for branding and imagery instead of the old files.",
+        },
+      ],
+      state: "Live on Vercel.",
+      lessons: `Rebuilding Cardify showed me how far I've come since my first project, and taught me several things:
+  
+  1. Refactoring: Turning a plain HTML/CSS/JS site into reusable React components.
+  2. Responsive Design: Building layouts with Tailwind CSS that work on every screen size.
+  3. TypeScript: Typing props and form state to catch mistakes early.
+  4. Deployment: Shipping a production build to Vercel.
+  
+  Key Takeaway: Revisiting old work is one of the clearest ways to measure growth, and a good rebuild keeps what worked while fixing what didn't.
+  `,
+    },
   },
+
   // project three
   {
     id: "project-three",
